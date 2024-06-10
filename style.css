@@ -1,0 +1,646 @@
+/***galaxy***/
+
+
+
+/*********************|BODY|*********************/
+body {
+    margin: auto;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    overflow: auto;
+    background: linear-gradient(315deg, rgb(22, 22, 26) 3%, rgb(26, 26, 46) 38%, rgb(22, 22, 26) 68%, rgb(26, 26, 46) 98%);
+    animation: gradient 15s ease infinite;
+    background-size: 400% 400%;
+    background-attachment: fixed;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+.wave {
+    background: rgb(255 255 255 / 25%);
+    border-radius: 1000% 1000% 0 0;
+    position: fixed;
+    width: 200%;
+    height: 12em;
+    animation: wave 10s -3s linear infinite;
+    transform: translate3d(0, 0, 0);
+    opacity: 0.8;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.wave:nth-of-type(2) {
+    bottom: -1.25em;
+    animation: wave 18s linear reverse infinite;
+    opacity: 0.8;
+}
+
+.wave:nth-of-type(3) {
+    bottom: -2.5em;
+    animation: wave 20s -1s reverse infinite;
+    opacity: 0.9;
+}
+
+@keyframes wave {
+    2% {
+        transform: translateX(1);
+    }
+
+    25% {
+        transform: translateX(-25%);
+    }
+
+    50% {
+        transform: translateX(-50%);
+    }
+
+    75% {
+        transform: translateX(-25%);
+    }
+
+    100% {
+        transform: translateX(1);
+    }
+}
+
+/*********************|THE_CIRCLE_THING_ON_TOP|*********************/
+
+.style-0 {
+	transform: matrix(-1, 0, 0, -1, 0, 0);
+	display: block;
+	box-sizing: border-box;
+	color:#004dac;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	height: 100px;
+	z-index: -1;
+}
+/*********************|HEADER|*********************/
+
+/*********************|SOCIALMEDIA_ICONS|*********************/
+.Website-Header {
+	position: absolute;
+	top: 5%;
+	left: 5%;
+}
+.social_icons {
+	min-width: 25px;
+	width: 2vw;
+	height: auto;
+	margin: 3px;
+}
+.social_icons:hover {
+    -webkit-filter: drop-shadow(0px 0px 20px rgba(255, 255, 255, 0.5));
+    filter: drop-shadow(0px 0px 20px rgba(255, 255, 255, 0.5));
+}
+
+.website-top-logo {
+	position: absolute;
+	top: 3%;
+	right: 5%;
+	min-width: 60px;
+	width: 5vw;
+	height: auto;
+}
+.pic1 {
+	width: 25%;
+	height: auto;
+	position: absolute;
+	left: 10%;
+	top: 25%;
+}
+.nameonheader {
+    font-size: 5vw;
+    text-align: center;
+    position: absolute;
+    right: 15%;
+    top: 25%;
+    font-family: Vazir, sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    color: rgb(240, 255, 255);
+}
+
+/*********************|TYPEWRITTER|*********************/
+
+.parent {
+ height: auto;
+ width: 25%;
+ position: absolute;
+ right: 15%;
+ top: 25%;
+}
+
+.ima-p {
+    font-size: 3vw;
+    text-align: right;
+    font-family: Vazir, sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    color: rgb(114, 114, 114);
+    position: relative;
+    top: 15vw;
+}
+
+@keyframes typing {
+    0.0000%, 27.3488% { content: ""; }
+    1.1395%, 26.2093% { content: "Ne"; }
+    2.2791%, 25.0698% { content: "Net"; }
+    3.4186%, 23.9302% { content: "Netwo"; }
+    4.5581%, 22.7907% { content: "Network"; }
+    5.6977%, 21.6512% { content: "Network E"; }
+    6.8372%, 20.5116% { content: "Network En"; }
+    7.9767%, 19.3721% { content: "Network Engi"; }
+    9.1163%, 18.2326% { content: "Network Engine"; }
+    10.2558%, 17.0930% { content: "Network Engineer"; }
+  
+    30.7674%, 51.2791% { content: ""; }
+    31.9070%, 50.1395% { content: "P"; }
+    33.0465%, 49.0000% { content: "Pr"; }
+    34.1860%, 47.8605% { content: "Prog"; }
+    35.3256%, 46.7209% { content: "Progra"; }
+    36.4651%, 45.5814% { content: "Programm"; }
+    37.6047%, 44.4419% { content: "Programmer"; }
+  
+    54.6977%, 75.2093% { content: ""; }
+    55.8372%, 74.0698% { content: "Cl"; }
+    56.9767%, 72.9302% { content: "Clo"; }
+    58.1163%, 71.7907% { content: "Cloud"; }
+    59.2558%, 70.6512% { content: "Cloud Eng"; }
+    60.3953%, 69.5116% { content: "Cloud Engin"; }
+    61.5349%, 68.3721% { content: "Cloud Engineer"; }
+  
+    78.6279%, 96.8605% { content: ""; }
+    79.7674%, 95.7209% { content: "Dev"; }
+    80.9070%, 94.5814% { content: "DevOps"; }
+    82.0465%, 93.4419% { content: "DevOps eng"; }
+    83.1860%, 92.3023% { content: "DevOps engine"; }
+    84.3256%, 91.1628% { content: "DevOps engineer"; }
+  }
+  
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+  
+  .typewriter {
+    --caret: currentcolor;
+}
+  
+  .typewriter::before {
+    content: "";
+    animation: typing 13.5s infinite;
+}
+  
+  .typewriter::after {
+    content: "";
+    border-right: 1px solid var(--caret);
+    animation: blink 0.5s linear infinite;
+}
+  
+  .typewriter.thick::after {
+    border-right: 1ch solid var(--caret);
+}
+  
+  .typewriter.nocaret::after {
+    border-right: 0;
+}
+  
+  
+@media (prefers-reduced-motion) {
+    .typewriter::after {
+      animation: none;
+}
+    
+@keyframes sequencePopup {
+      0%, 100% { content: "network engineer"; }
+      25% { content: "programmer"; }
+      50% { content: "cloud dev"; }
+      75% { content: "dev ops"; }
+}
+  
+.typewriter::before {
+      content: "network engineer";
+      animation: sequencePopup 12s linear infinite;
+    }
+}
+
+/*********************|ABOUTME|*********************/
+
+.aboutme-section {
+  margin: 20px;
+  text-align: center;
+  position: absolute; 
+  left: 0; 
+  right: 0;
+  top: 110%;
+  margin-left: auto; 
+  margin-right: auto; 
+  color: aliceblue;
+  font-family: Vazir, sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  min-width: 200px;
+	width: 10vw;
+	height: auto;
+}
+
+.aboutme-with-rectangle {
+  display: inline-block;
+  position: relative;
+  margin: 20px 0;
+}
+
+.aboutme-with-rectangle h2 {
+  margin: 0;
+  padding: 0 10px;
+}
+
+.aboutme-with-rectangle::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: #004dac;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+}
+
+.aboutme {
+  width: 50%;
+	height: auto;
+	position: absolute;
+	right: 40%;
+	top: 110%;
+  color: aliceblue;
+  font-family: Vazir, sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 1.5vw;
+  text-align: right;
+  transform: translate(0px, 200px);
+
+}
+
+.pic2 {
+  width: 25%;
+	height: auto;
+	position: absolute;
+	right: 10%;
+	top: 110%;
+  transform: translate(0px, 150px);
+
+}
+
+
+/*********************|MY_SKILLS|*********************/
+
+.myskills-section {
+  margin: 20px;
+  text-align: center;
+  position: absolute; 
+  left: 0; 
+  right: 0;
+  top: 220%;
+  margin-left: auto; 
+  margin-right: auto; 
+  width: 200px;
+  color: aliceblue;
+  font-family: Vazir, sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  min-width: 200px;
+	width: 10vw;
+	height: auto;
+}
+
+.myskills-with-rectangle {
+  display: inline-block;
+  position: relative;
+  margin: 20px 0;
+}
+
+.myskills-with-rectangle h2 {
+  margin: 0;
+  padding: 0 10px;
+}
+
+.myskills-with-rectangle::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: #004dac;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+}
+
+a:hover,
+button:hover {
+  cursor: pointer;
+}
+
+.wrapper {
+	width: 80%;
+  left: 8%;
+  right: 8%;
+	height: auto;
+	position: absolute;
+	top: 220%;
+  transform: translate(0px, 150px);
+
+}
+
+.container {
+  opacity: 90%;
+  width: 100%;
+  padding: 2% 2% 2%;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+  transition: .2s;
+}
+
+.container * {
+  font-weight: 500;
+}
+
+.container:hover {
+   opacity: 1;
+   transition: .2s;
+   -webkit-filter: drop-shadow(0px 0px 20px #0f63ff);
+   filter: drop-shadow(0px 0px 20px #0f63ff);
+}
+
+
+
+.details {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.bar {
+  position: relative;
+  border-radius: 10px;
+  background-color: rgb(186, 186, 186);
+
+}
+
+.bar div {
+  position: relative;
+  width: 0;
+  height: 9px;
+  border-radius: 10px;
+  background: linear-gradient(45deg, #1188d8, #0f63ff, #0f63ff);
+}
+
+.skills:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+#cs-bar {
+  animation: cs-fill 2s forwards;
+}
+
+@keyframes cs-fill {
+  100% {
+    width: 90%;
+  }
+}
+
+#aspnetcore-bar {
+  animation: aspnetcore-fill 2s forwards;
+}
+
+@keyframes aspnetcore-fill {
+  100% {
+    width: 90%;
+  }
+}
+
+#aspnetmvc-bar {
+  animation: aspnetmvc-fill 2s forwards;
+}
+
+@keyframes aspnetmvc-fill {
+  100% {
+    width: 90%;
+  }
+}
+
+#sqlserver-bar {
+  animation: sqlserver-fill 2s forwards;
+}
+
+@keyframes sqlserver-fill {
+  100% {
+    width: 75%;
+  }
+}
+
+#seo-bar {
+  animation: seo-fill 2s forwards;
+}
+
+@keyframes seo-fill {
+  100% {
+    width: 50%;
+  }
+}
+
+#html-bar {
+  animation: html-fill 2s forwards;
+}
+
+@keyframes html-fill {
+  100% {
+    width: 75%;
+  }
+}
+
+#css-bar {
+  animation: css-fill 2s forwards;
+}
+
+@keyframes css-fill {
+  100% {
+    width: 75%;
+  }
+}
+
+#wordpress-bar {
+  animation: wordpress-fill 2s forwards;
+}
+
+@keyframes wordpress-fill {
+  100% {
+    width: 50%;
+  }
+}
+
+#py-bar {
+  animation: py-fill 2s forwards;
+}
+
+@keyframes py-fill {
+  100% {
+    width: 50%;
+  }
+}
+
+/*********************|Imageslider|*********************/
+
+
+.slider {
+  height: 75pt;
+  margin: 0 auto;
+  overflow: hidden;
+  position: absolute;
+	top: 220%;
+  width: 100%;
+  transform: translate(0px, 850px);
+  cursor: default;
+  user-select: none;
+  touch-action: none;
+}
+
+.slider:before {
+  left: 0;
+  top: 0;
+}
+.slider:after,
+.slider:before {
+  background: linear-gradient(
+      to right,
+      opacity 0 0%
+      hsla(0, 0%, 100%, 0) 100%
+  );
+  content: "";
+  height: 75pt;
+  position: absolute;
+  width: 100px;
+  z-index: 2;
+}
+.slider:after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+.slider:after,
+.slider:before {
+  background: linear-gradient(
+      to right,
+      rgb(26, 26, 46) 0%,
+      opacity 0 100%
+  );
+  content: "";
+  height: 75pt;
+  position: absolute;
+  width: 200px;
+  z-index: 2;
+}
+
+.slider .slide-track-1 {
+  animation: scroll-l 60s linear infinite;
+  display: flex;
+  width: 3500px;
+}
+.slider .slide-track-2 {
+  animation: scroll-r 60s linear infinite;
+  display: flex;
+  width: 3500px;
+}
+
+.slider .slide {
+  height: 75pt;
+  width: 250px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.slider .slide img {
+  width: 100px;
+  padding: 1pc;
+  vertical-align: middle;
+  margin: 0 auto;
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+}
+
+@keyframes scroll-l {
+  0% {
+      transform: translateX(0);
+  }
+  100% {
+      transform: translateX(calc(-250px * 7));
+  }
+}
+@keyframes scroll-r {
+  100% {
+      transform: translateX(0);
+  }
+  0% {
+      transform: translateX(calc(-250px * 7));
+  }
+}
+
+
+/*********************|INTRODUCTION|*********************/
+
+
+/*********************|FOOTER|*********************/
+
+.style-7 {
+	display: block;
+	background: rgb(39, 40, 41);
+	padding: 30px 0px;
+	color: rgb(255, 255, 255);
+	font-size: 14px;
+	position: absolute;
+  width: 100%;
+	top: 500%;
+	text-align: center;
+}
+
+ 
+
+
+/*********************|ALL_FONTS|*********************/
+
+/* <weight>: Use a value from 100 to 900 */
+
+.vazirmatn {
+	font-family: "Vazirmatn", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 900;
+	font-style: normal;
+  }
+
+  
+  @import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+  @import url('https://v1.fontapi.ir/css/Vazir');
+
+
+  
